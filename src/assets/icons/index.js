@@ -1,0 +1,19 @@
+export { ReactComponent as ArrowDownSVG } from './arrowDown.svg';
+export { ReactComponent as ArrowUpSVG } from './arrowUp.svg';
+export { ReactComponent as ExpandMore } from './expandMore.svg';
+export { ReactComponent as Close } from './close.svg';
+export { ReactComponent as NavigateBeforeIcon } from './navigateBefore.svg';
+export { ReactComponent as CartSVG } from './cart.svg';
+export { ReactComponent as FilterSVG } from './filter.svg';
+export { ReactComponent as CloseSVG } from './close.svg';
+export { ReactComponent as Mail } from './mail.svg';
+export { ReactComponent as Info } from './information.svg';
+export { ReactComponent as LeftSVG } from './chevronLeft.svg';
+export { ReactComponent as RightSVG } from './chevronRight.svg';
+export { ReactComponent as Eye } from './eye.svg';
+export { ReactComponent as List } from './heart.svg';
+export { ReactComponent as Compare } from './compare.svg';
+export { ReactComponent as GridView } from './gridView.svg';
+export { ReactComponent as ListView } from './listView.svg';
+export { ReactComponent as Calculate } from './calculate.svg';
+

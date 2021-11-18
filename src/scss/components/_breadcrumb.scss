@@ -1,0 +1,35 @@
+.MuiTypography-body1 {
+  font-family: 'OpenSans-Regular' !important;
+}
+
+.MuiBreadcrumbs-ol {
+  
+  padding: 0px;
+  margin: 0px 0px 24px 0px !important;
+  line-height: 50px;
+  border-radius: 0;
+  border-bottom: var(--thin-border) var(--border-color);
+
+  .MuiBreadcrumbs-li {
+    font-size: var(--base-font-size);
+    p {
+      font-size: var(--base-font-size);
+    }
+
+    &:first-child {
+      &::before {
+        content: '';
+      }
+    }
+
+    a {
+      color: var(--primary-color-2);
+      cursor: pointer;
+    }
+
+    &.active {
+      color: var(--primary-color-4);
+      font-weight: var(--font-weight-medium);
+    }
+  }
+}

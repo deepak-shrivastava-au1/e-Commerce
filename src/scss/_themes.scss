@@ -1,0 +1,158 @@
+//Function to Convert Color Hex value to RGB
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+//Primary Color SASS Variable
+$primary-color-1: #00a3a5;
+$primary-color-2: #2f3c46;
+$primary-color-3: #506574;
+$primary-color-4: #6d899d;
+
+//Secondary Color SASS Variable
+$secondary-color: #eb617c;
+
+//Form Elements SASS Variable
+$form-base-color: #b6c4ce;
+$form-text-color: #2f3c46;
+$form-focus-color: #00a3a5;
+$form-error-color: #f85640;
+$form-border-color-1: #506574;
+$form-border-color-2: #2f3c46;
+
+//Icon Color SASS Variable
+$primary-icon-1: #00a3a5;
+$primary-icon-2: #2f3c46;
+$primary-icon-3: #506574;
+$primary-icon-4: #6d899d;
+$primary-icon-5: #858c94;
+$secondary-icon-1: #eb617c;
+$secondary-icon-2: #ffffff;
+
+:root {
+  //Font Size
+  --base-font-size: 14px;
+
+  //Font Weight
+  --font-weight-regular: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+
+  //Page Background Color & Border color
+  --base-color: #e5e5e5;
+
+  //Note Info
+  --note-info: #bc741a;
+
+  //Primary Color
+  --primary-color-1: #{$primary-color-1};
+  --primary-color-1-rgb: #{hexToRGB($primary-color-1)};
+
+  --primary-color-2: #{$primary-color-2};
+  --primary-color-2-rgb: #{hexToRGB($primary-color-2)};
+
+  --primary-color-3: #{$primary-color-3};
+  --primary-color-3-rgb: #{hexToRGB($primary-color-3)};
+
+  --primary-color-4: #{$primary-color-4};
+  --primary-color-4-rgb: #{hexToRGB($primary-color-4)};
+
+  //Secondary Color
+  --secondary-color: #eb617c;
+  --secondary-color: #{$secondary-color};
+  --secondary-color-rgb: #{hexToRGB($secondary-color)};
+
+  //Errors and warning color
+  --red: #ff0201;
+  --yellow: #ffdd07;
+  --timeline-color: #6d899d;
+
+  //Grey Tones
+  --white: #ffffff;
+  --gray-1: #f8f8f8;
+  --gray-2: #f1f1f1;
+  --gray-3: #e8e8e8;
+  --gray-4: #cfcfcf;
+  --gray-5: #525252;
+  --gray-6: #121212;
+
+  //Icon Color
+  --primary-icon-1: #{$primary-icon-1};
+  --primary-icon-2: #{$primary-icon-2};
+  --primary-icon-3: #{$primary-icon-3};
+  --primary-icon-4: #{$primary-icon-4};
+  --primary-icon-5: #{$primary-icon-5};
+  --secondary-icon-1: #{$secondary-icon-1};
+  --secondary-icon-2: #{$secondary-icon-2};
+
+  //Notification badges
+  --notifi-badge-bg: #ffdd07;
+  --notifi-badge-txt: #ffffff;
+
+  //Opacity
+  --low-opacity: 0.1;
+  --medium-opacity: 0.5;
+  --high-opacity: 0.8;
+
+  //Borders
+  --no-border: 0px;
+  --thin-border: 1px solid;
+  --thicker-border: 2px solid;
+  --bolder-border: 4px solid;
+
+  //Border Color
+  --border-color: #dae2e7;
+  --border-color-1: #000000;
+
+  //Border Radius
+  --border-radius: 4px;
+
+  //Transition Timing
+  --transition05s: 0.5s;
+  --transition03s: 0.3s;
+
+  //Form Elements
+  --form-base-color: #{$form-base-color};
+  --form-base-color-rgb: #{hexToRGB($form-base-color)};
+
+  --form-text-color: #{$form-text-color};
+  --form-text-color-rgb: #{hexToRGB($form-text-color)};
+
+  --form-focus-color: #{$form-focus-color};
+  --form-focus-color-rgb: #{hexToRGB($form-focus-color)};
+
+  --form-error-color: #{$form-error-color};
+  --form-error-color-rgb: #{hexToRGB($form-error-color)};
+
+  --form-border-color-1: #{$form-border-color-1};
+  --form-border-color-1-rgb: #{hexToRGB($form-border-color-1)};
+
+  --form-border-color-2: #{$form-border-color-2};
+  --form-border-color-2-rgb: #{hexToRGB($form-border-color-2)};
+
+  //Note Info
+  --note-info: #bc741a;
+
+  //Alert box Info
+  --info-alert-bg: #e1f2fc;
+  --info-alert-border: #08a0f7;
+  --info-alert-text-1: #3387b7;
+  --info-alert-bg1: #d0eeee;
+
+  //Alert box Warning
+  --warning-alert-bg: #fff8f8;
+  --warning-alert-border: #f85640;
+  --warning-alert-text-1: #f85640;
+  --warning-alert-text-2: #79170a;
+
+  //Success and Fail
+  --success: #00a3a5;
+  --fail: #eb617c;
+
+  //Custom Scrollbar
+  --scrollbar-thumb: #6d899d;
+  --scrollbar-track: #ffffff;
+
+  // Custom Login Flag
+  --custom-login: true;
+}

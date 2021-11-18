@@ -1,0 +1,33 @@
+//Custom Pagination Without Page No Start
+.custom-pagination{
+    .default {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        background-color: var(--white);
+        border-radius: var(--border-radius);
+        margin-left: 8px;
+        line-height: 32px;
+        padding: 7px 4px 6px 4px;
+        border: 1px solid var(--gray-4);
+    }
+    .disable{
+       opacity: var(--low-opacity);
+       pointer-events: none;      
+    }
+    .icon-color{
+      stroke: var(--primary-icon-4);
+      fill: var(--primary-icon-4);
+      height: 22px;
+      margin-top: -3px;
+      margin-right: -2px;
+      width: 26px;
+    }
+}
+//Custom Pagination Without Page No End
+
+//Pagination Widget
+.MuiPaginationItem-icon {
+  stroke: none;
+  fill: var(--primary-icon-2) !important;
+}

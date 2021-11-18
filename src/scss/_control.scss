@@ -1,0 +1,61 @@
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/*BUTTON STYLES*/
+
+.btn-search {
+  background: var(--primary-color-1);
+  height: 48px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.btn-search:hover {
+  opacity: var(--high-opacity);
+}
+.right-float {
+  float: right;
+}
+
+.left-float {
+  float: left;
+}
+
+.btn-accordion {
+  position: absolute;
+  width: 91px;
+  height: 19.17px;
+
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--base-font-size);
+  line-height: 143%;
+  /* identical to box height, or 20px */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.018em;
+
+  /* Colors/White */
+
+  color: var(--base-color);
+}
+
+.btnbg-accordion {
+  width: 151px;
+  height: 35px;
+  background: var(--primary-color-1);
+  border-radius: var(--border-radius);
+  align-items: center;
+}
+/*BUTTON STYLES END*/
+
+.loader-gif {
+  height: 50px;
+  margin: 0 auto;
+}

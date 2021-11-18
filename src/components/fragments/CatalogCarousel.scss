@@ -1,0 +1,34 @@
+
+.CatalogCarousel{
+    .slick-slider {
+        background: none;
+        border-radius: var(--thin-border);
+        display: flex;
+        margin: 0 auto;
+        
+      }
+      .slick-track{
+          width: 2496px;
+      }
+}
+
+.leftArrow{
+    margin-left: 0px;
+    margin-top: -30px;
+}
+.rightArrow{
+    margin-top: -30px;
+    margin-left: -20px !important;
+    margin-right: 25px;
+}
+
+
+//catalog Tree css
+
+.catalogTreeHeading{
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+}
+.subCatalogTree{
+    cursor: pointer;
+}

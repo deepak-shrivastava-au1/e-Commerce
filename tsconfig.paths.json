@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@fragments/*": ["./components/fragments/*"],
+      "@common/*": ["./components/common/*"],
+      "@pages/*": ["./components/pages/*"],
+      "@constants/*": ["./constants/*"],
+      "@api/*": ["./utilities/api/*"],
+      "@icons": ["./assets/icons/index.ts"],
+      "@images/*": ["./assets/images/*"],
+      "@slices/*": ["./redux/Slices/*"],
+      "@utilities/*":["./utilities/*"],
+      "@hooks":["./hooks/index.ts"],
+      "@providers/*":["./redux/Providers/*"],
+      "@interfaces/*":["./constants/interfaces/*"],
+      "@routers/*":["./routers/*"],
+      "@actions/*":["./redux/actions/*"]
+    }
+  }
+}

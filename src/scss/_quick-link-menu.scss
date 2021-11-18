@@ -1,0 +1,20 @@
+.menu-items {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  height: 44px;
+}
+.menu-items li:first-child {
+  margin: 0px 10px 0px 0px;
+}
+.menu-items li {
+  line-height: 44px;
+  margin: 0px 26px 0px 0px;
+}
+
+.menu-items li a {
+  color: var(--primary-color-2);
+  font-weight: var(--font-weight-medium);
+  size: 16px;
+}

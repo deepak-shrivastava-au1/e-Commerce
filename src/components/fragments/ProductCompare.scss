@@ -1,0 +1,116 @@
+
+.compare_table {
+  thead{border: none;}
+  td {
+    border: var(--thin-border) rgba(var(--primary-color-2-rgb), var(--low-opacity));
+  }
+  .totalItemstoCompare {
+    
+    p {
+      font-size: cal(var(--base-font-size) + 2px);
+      font-weight: var(--font-weight-medium);
+      display: flex;
+      align-items: center;
+      justify-items: center;
+    }
+  }
+  .compare_description {
+    font-size: cal(var(--base-font-size) + 2px);
+    font-weight: var(--font-weight-medium);
+  }
+  .compare_closeIcon {
+    border: var(--thin-border) var(--primary-color-1);
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 2px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .compareImage{
+    margin-top: -40px;
+    padding: 20px;
+  }
+
+  th{
+    width: 20%;
+  }
+}
+
+// table head sticky code 
+
+
+@media only screen and (max-width: 600px) {
+
+  .totalItemstoCompare{
+    font-size:  24px;
+    font-weight: var(--font-weight-bold);
+  }
+  .compare-btn{
+    display: flex;
+    margin-top: -10px;
+    margin-left: -250px;
+    margin-bottom: 60px;
+  }
+}
+.product-compare-details{
+  font-size: cal(var(--base-font-size) + 2px);
+  font-weight: var(--font-weight-medium);
+}
+
+.compare-btn {
+  span{
+    padding:1px 10px;
+    background-color: var(--white);
+    color: var(--primary-icon-2);
+    border-radius: var(--border-radius);
+  }
+}
+
+
+// New Style 
+.sticky-table{
+  margin-top: 15px;
+.table th {
+    border-top: none; 
+}
+}
+.sticky-table table{
+  text-align: left;
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+}
+.sticky-table th, .sticky-table td{
+  padding: 0.25rem;
+}
+.sticky-table tr th{
+  background: var(--white);
+  height: 245px;
+}
+.sticky-table th{
+  background: white;
+  position: sticky;
+  top: 115px;
+}
+.sticky-table .colm-1{
+  width: 20%;
+  min-width: 245px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sticky-table .colm-1, .sticky-table .colm-4, .sticky-table .colm-5{
+    display: none;
+  }
+  .sticky-table .colm-2, .sticky-table .colm-3{
+    width: 50%;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,6 @@
+.breadcrumbWrapper {
+  border-bottom: var(--small-border) #dae2e7;
+  background-color: var(--pagebg-color);
+  padding-left: 0.5rem;
+  color: var(--highlightfg-color);
+}

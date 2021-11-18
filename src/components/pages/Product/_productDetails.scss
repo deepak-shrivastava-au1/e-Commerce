@@ -1,0 +1,335 @@
+.mobile-slider{
+    .slick-dots {
+        position: absolute;
+        bottom: -30px !important;
+        margin-top: 20px;
+    }
+}
+.DescriptionDetail{
+    font-weight: var(--font-weight-bold);
+}
+
+.Item-Code{
+    background-color: rgba(var(--primary-color-2-rgb), var(--low-opacity));		
+    padding: 8px 15px;
+}
+.available{
+    font-weight: var(--font-weight-medium);
+}
+.price-productDetails{
+    font-size: calc(var(--base-font-size) + 10px);
+    font-weight: var(--font-weight-bold);
+}
+.price-old-productDetails{
+    font-size: calc(var(--base-font-size) + 6px);
+    font-weight: var(--font-weight-small);
+    margin-left: 20px;
+    color: var(--primary-color-1);
+}
+.size-selected{
+    padding:8px 18px;
+    border: var( --thicker-border) var(--primary-color-1);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+
+    .size-label{
+        color: var(--primary-color-1);
+    }
+}
+.select-size{
+    padding:8px 18px;
+    border: var( --thicker-border);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+.size-label{
+    font-weight: var(--font-weight-medium);
+    font-size: calc(var(--base-font-size) + 2px);
+}
+.calculator{
+    border: var( --thin-border) var(--primary-color-4);
+    background: none;
+    height: 45px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 28px;
+    border-radius: var(--border-radius);
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.calculatorIcon {
+    //stroke: var(--primary-color-2);
+    background-color: var(--white);
+    width: 40px;
+    height: 38px;
+    padding: 0px;
+    color: var(--primary-color-4);
+  }
+
+.heading-details{
+    font-weight: var(--font-weight-medium);
+    font-size: calc(var(--base-font-size) + 4px);
+}
+.arrow-down{
+    font-size: calc(var(--base-font-size) + 14px);
+    cursor: pointer;
+}
+.specificationHead{
+    font-size: calc(var(--base-font-size));
+    opacity: var(--medium-opacity);
+    margin-bottom: 10px;
+}
+.specificationValue{
+    font-weight: var(--font-weight-medium);
+    font-size: calc(var(--base-font-size) + 2px);
+}
+.document-row{
+    display: flex;
+    
+}
+@media only screen and (max-width: 600px) {
+    .document-row{
+        display: flex;
+        justify-content: center;
+
+        .mobileDoc{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.document-details{
+    border: var( --thin-border) var(--primary-color-4);
+    padding: 25px 10px;
+    width: 182px;
+    height: 121px;
+    left: 0px;
+    top: 0px;
+    border-radius: var(--border-radius);
+    margin-left: 0 auto;
+    justify-content: center;
+
+
+    label{
+        color: var(--primary-color-1) ;
+        font-weight: var(--font-weight-medium);
+        font-size: var(--base-font-size);
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+    }
+}
+.labelText{
+    font-size: calc(var(--base-font-size) + 2px);
+    color: var(--primary-color-4) ;
+    // line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.0275em;
+}
+
+.inquiryImage{
+    color: var(--white);
+    margin-top: 10%;
+    margin-left: 5%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 0px 10px;
+    border-radius: var(--border-radius);
+    height: 40px;
+    width: auto;
+}
+
+
+.arrow,
+.arrow:before{
+    position: absolute;
+    left: 50%
+}
+
+.arrow{
+    width: 40px;
+    height: 40px;
+    top: 80%;
+    margin: -20px 0 0 -20px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px gray solid;
+    border-bottom: 2px gray solid;
+}
+
+  
+.arrow:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow
+}
+  
+@keyframes arrow{
+    0%{
+        opacity: 1;
+    }
+  100%{
+    opacity: 0;
+    transform: translate(-10px, -10px)
+  }
+}
+
+.zoom-image{
+    background-size: 1000px 1000px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    img{
+        margin-top: -15px;
+    }
+}
+
+.documentIcon{
+    height: 40px;
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.catalog-links{
+    cursor: pointer;
+}
+// Price calculator styles
+.mobileWidth {
+    width: 500px;
+  }
+@media only screen and (max-width: 600px) {
+  .mobileWidth {
+    width: auto;
+    padding: 10px;
+    padding-left: 0px;
+
+    .label.pb-3 {
+        margin-left: -33px;
+        margin-top: 20px;
+    }
+    .title.pb-3 {
+        margin-left: -33px;
+        margin-top: 0px;
+    }
+    .price-on-calculator {
+        margin-left: -33px;
+    }
+    
+    .sc-dlnjwi.koSwQA{
+        margin-left: -15px;
+        margin-top: 10px;
+    }
+
+    .datePicker{
+        .DateInput {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            position: relative;
+            display: inline-block;
+            width: 265px !important;
+            vertical-align: middle;
+            
+        }
+    }
+
+  }
+}
+.datePicker{
+
+    .DateInput_input {
+        font-weight: 200;
+        font-size: 20px;     //variable not working
+        line-height: 32px;
+        color: #484848;
+        background-color: #fff;
+        width: 100%;
+        padding: 6px 6px 6px 26px;
+        border: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 2px solid transparent;
+        border-left: 0;
+        border-radius: 0;
+        padding-left: 50px;
+    
+    
+        
+    }
+    svg {
+        margin-left: 10px;
+        height: 30px;
+        width: 25px;
+        margin-bottom: 7px;
+    }
+    
+    .SingleDatePickerInput__withBorder {
+        border-radius: 4px;
+        border: 1px solid #dbdbdb;
+        
+    }
+    
+    .DateInput {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        position: relative;
+        display: inline-block;
+        width: 209px !important;
+        vertical-align: middle;
+        
+    }
+
+}
+
+
+.currency-code{
+    label{
+        font-weight: var(--font-weight-medium);
+        font-size: var(--base-font-size);
+        padding-bottom: 10px;
+    }
+    select {
+        height: 45px;
+        width: 137px;
+        margin-top: -2px;
+    }
+}
+
+// Matrix Component
+
+.matrixUnit{
+    height: 20px !important;
+    width: 33%;
+    option{
+        font-size: 12px;
+    }
+}
+.Matrix-table{
+    border: var(--thin-border) var(--primary-color-4);
+}
+.matrix-heading {
+    font-weight: var(--font-weight-medium);
+}
+.matrixButton{
+    font-size: var(--base-font-size);
+}

@@ -1,0 +1,47 @@
+// Content H&V align Center
+@mixin align-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Shadow
+@mixin box-shadow() {
+  -webkit-box-shadow: 0 1px 8px rgba(var(--primary-color-3), 0.8);
+  -moz-box-shadow: 0 1px 8px rgba(var(--primary-color-3), 0.8);
+}
+
+// Set the Width & Height
+@mixin wdith-height($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+
+//SVG Icon Color Change Start
+@mixin recolor($color: #000, $opacity: 1) {
+  $r: red($color) / 255;
+  $g: green($color) / 255;
+  $b: blue($color) / 255;
+  $a: $opacity;
+
+  //Grayscale fallback if SVG from data url is not supported
+  $lightness: lightness($color);
+  filter: saturate(0%) brightness(0%) invert($lightness) opacity($opacity);
+
+  //Color filter
+  $svg-filter-id: "recolor";
+  filter: url('data:image/svg+xml;utf8,\
+  <svg xmlns="http://www.w3.org/2000/svg">\
+    <filter id="#{$svg-filter-id}" color-interpolation-filters="sRGB">\
+      <feColorMatrix type="matrix" values="\
+        0 0 0 0 #{$r}\
+        0 0 0 0 #{$g}\
+        0 0 0 0 #{$b}\
+        0 0 0 #{$a} 0\
+      "/>\
+    </filter>\
+  </svg>\
+  ##{$svg-filter-id}');
+}
+//SVG Icon Color Change End

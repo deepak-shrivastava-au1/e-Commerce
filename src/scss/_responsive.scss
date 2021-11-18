@@ -1,0 +1,165 @@
+.mobile-block {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
+  /* tablet devices */
+}
+@media (max-width: 992px) {
+  /* small tablet devices */
+
+  .table-shopping-cart tr td:first-child {
+    width: 250px;
+  }
+  .table-shopping-cart .itemside .info {
+    padding: 0;
+  }
+  .table-shopping-cart .itemside .aside {
+    display: none;
+  }
+}
+@media all and (max-width: 992px) {
+  /* mobile devices */
+
+  .header-container .logo {
+    max-height: 40px;
+    width: auto;
+  }
+
+  .header-sticky {
+    position: fixed;
+  }
+
+  
+  .search-header {
+    margin: 0px !important;
+  }
+  .item-feature {
+    margin-bottom: 20px;
+  }
+
+  .mobile-order-first {
+    order: -1;
+  }
+
+  .mobile-order-1 {
+    order: 1;
+  }
+
+  .mobile-order-2 {
+    order: 2;
+  }
+
+  .mobile-order-3 {
+    order: 3;
+  }
+
+  .mobile-py {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .mobile-pb {
+    padding-bottom: 20px;
+  }
+
+  .mobile-pt {
+    padding-top: 20px;
+  }
+
+  .navbar-expand .navbar-collapse {
+    flex-direction: column;
+  }
+ 
+
+  .mob-zero-padding {
+    padding: 0;
+  }
+  .flex-row {
+    width: calc(100% / 3); //1px = border right
+
+    &.first {
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .column {
+    width: 100%;
+  }
+  .flex-table {
+    .flex-row {
+      border-bottom: 0;
+    }
+    .flex-row:last-of-type {
+      border-bottom: var(--thin-border) #e5e5e5;
+    }
+  }
+
+  .header {
+    .flex-row {
+      border-bottom: var(--thin-border);
+    }
+  }
+
+  .flex-row {
+    width: 100%; //1px = border right
+
+    &.first {
+      width: 100%;
+    }
+  }
+
+  .table-container {
+    width: 100%;
+  }
+  .col-lg-6,
+  .col-sm-12 {
+    padding: 0px;
+  }
+  .row-img {
+    float: left;
+  }
+  .card-table {
+    flex-direction: column;
+    margin-bottom: 16px;   
+  }
+  .card-table:last-child{
+    margin-bottom: 0px; 
+  }
+  .table-figCaption {
+    margin-left: 25%;
+    text-align: initial;
+  }
+
+  .divider_line {
+    width: 47.81px;
+    height: 0px;
+    left: 618.84px;
+    top: 134px;
+
+    opacity: 0.6;
+    border: var(--thin-border) #6d899d;
+  }
+
+  .card-product-grid .fix-height-mb {
+    height: 25px;
+    margin-right: 5px;
+  }
+  .mob-left-float {
+    float: left;
+  }
+  .mob-top-margin {
+    margin-top: 5px;
+  }
+  .mobile-block {
+    display: block !important;
+  }
+  .mob-inline-block {
+    display: inline-block !important;
+  }
+
+  .mobile-hide {
+    display: none !important;
+  }
+}

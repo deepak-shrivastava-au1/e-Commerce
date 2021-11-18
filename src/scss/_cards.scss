@@ -1,0 +1,99 @@
+.row {
+  margin: 0px;
+}
+[class*='card-product'] .img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+[class*='card-product'] .img-wrap img {
+  height: auto;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+
+  display: inline-block;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+[class*='card-product'] .img-wrap .row-img {
+  height: 100px;
+  width: 100px;
+}
+
+.card-product-grid {
+  margin-bottom: 20px;
+}
+.card-product-grid .img-wrap {
+  border-radius: 0.2rem 0.2rem 0 0;
+  min-height: 245px;
+  max-height: 245px;
+  object-fit: contain;
+}
+.zero-mar-pad {
+  padding-left: 0px;
+}
+.card-product-grid .info-wrap {
+  overflow: hidden;
+  padding-top: 10px;
+  padding-left: 25px;
+  text-align: left;
+  min-height: 145px;
+}
+
+.card-product-grid .btn-overlay {
+  transition: var(--transition05s);
+  opacity: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px 0;
+  text-align: center;
+  position: absolute;
+  background: grey;
+  border: var(--thin-border) var(--primary-color-1);
+  color: var(--primary-color-1);
+  box-sizing: border-box;
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card-product-grid:hover .btn-overlay {
+  opacity: var(--high-opacity);
+}
+.card-product-grid:hover .btn-overlay .iconsStyle {
+  background: var(--white);
+  border-radius: 50%;
+  width: 43px;
+  height: 35px;
+}
+
+.card-product-grid:hover {
+  box-shadow: 0 4px 15px rgba(153, 153, 153, 0.3);
+  transition: var(--transition03s);
+}
+
+.card-header .title {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.badge {
+  color: var(--notifi-badge-txt);
+  float: left;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+.badge-pill {
+  background: var(--notifi-badge-bg);
+}
+.card-table {
+  flex-direction: row;
+  margin-bottom: inherit;
+}
+.card-block-min-width {
+  min-width: 50px;
+}

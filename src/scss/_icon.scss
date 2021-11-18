@@ -1,0 +1,197 @@
+.icontext {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.icontext p {
+  margin-bottom: 0;
+}
+.icontext .text {
+  width: 100%;
+  line-height: 1.2;
+}
+.icontext .icon {
+  position: relative;
+  margin-right: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.icontext .title {
+  display: block;
+  margin-bottom: 0;
+}
+
+.icon-control {
+  margin-top: 5px;
+  float: right;
+  font-size: 80%;
+}
+
+.iconColor {
+  stroke: var(--white);
+}
+
+.iconBannerLR {
+  stroke: var(--primary-icon-4);
+  fill: var(--primary-icon-4);
+}
+
+.iconSecondaryColor {
+  stroke: var(--primary-icon-2);
+  fill: var(--primary-icon-2);
+  background-color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.icon-sm {
+  display: inline-block;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 48px;
+  height: 48px;
+  line-height: 48px !important;
+  font-size: var(--big-font-size);
+  -o-object-fit: cover;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.icon-notification {
+  display: inline-block;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 48px;
+  height: 48px;
+  line-height: 48px !important;
+  font-size: var(--big-font-size);
+  -o-object-fit: cover;
+  object-fit: cover;
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+.iconSecondaryColorList {
+  stroke: var(--primary-icon-2);
+  fill: var(--primary-icon-2);
+  background: var( --white);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: calc(var(--base-font-size) - 2px);
+
+}
+.listAction {
+  // font-size: calc(var(--base-font-size) - 3);
+  font-size: 11px;
+  padding-left: 0;
+  display: inline;
+  background: none;
+  border: none;
+  margin-left: -6px;
+  color: var( --primary-color-4);
+  opacity: var(--high-opacity);
+  &:hover {
+    color: var( --primary-color-1) ;
+
+  }
+}
+
+.ListIcon {
+  background: var( --white);
+  padding: 5px 10px 5px 10px;
+  border-radius: var( --border-radius);
+  fill: var( --primary-icon-2);
+  stroke: var( --primary-icon-2);
+}
+.GridIcon {
+  background: lightgray;
+  color: var( --primary-color-4);
+  padding: 5px 10px 5px 10px;
+  border-radius: var(--border-radius);
+  fill: var( --primary-icon-2);
+  stroke: var( --primary-icon-2);
+}
+
+//Icon Sizes 
+//.icon-sm{
+//  @include wdith-height(8px);
+//}
+.icon-md{
+  @include wdith-height(16px);
+} 
+.icon-lg{
+  @include wdith-height(24px);
+}
+.icon-2x{
+  @include wdith-height(32px);
+}
+.icon-3x{
+  @include wdith-height(48px);
+}
+
+//Icon Color
+.primary-icon-1{
+  stroke: var(--primary-icon-1);
+  fill: var(--primary-icon-1);
+}
+.primary-icon-2{
+  stroke: var(--primary-icon-2);
+  fill: var(--primary-icon-2);
+}
+.primary-icon-3{
+  stroke: var(--primary-icon-3);
+  fill: var(--primary-icon-3);
+}
+.primary-icon-4{
+  stroke: var(--primary-icon-4);
+  fill: var(--primary-icon-4);
+}
+.primary-icon-5{
+  stroke: var(--primary-icon-5);
+  fill: var(--primary-icon-5);
+}
+.secondary-icon-1{
+  stroke: var(--secondary-icon-1);
+  fill: var(--secondary-icon-1);
+}
+.secondary-icon-2{
+  stroke: var(--secondary-icon-2);
+  fill: var(--secondary-icon-2);
+} 
+
+.info-icon{
+  stroke: var(--note-info);
+  fill: var(--note-info);
+} 
+
+//Icon Success and Fail
+.icon-success{
+  background-color: var(--success);
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  @include align-center;
+  .icon{
+    width: 30px;
+    height: 30px;
+    stroke: var(--secondary-icon-2);
+  }
+}
+.icon-fail{
+  background-color: var(--fail);
+  border-radius: 60px;
+  width: 60px;
+  height: 60px;
+  @include align-center;
+  .icon{
+    width: 30px;
+    height: 30px;
+    stroke: var(--secondary-icon-2);
+  }
+}

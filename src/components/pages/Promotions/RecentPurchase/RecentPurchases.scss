@@ -1,0 +1,389 @@
+//Card Table Start
+.card-table {
+  .row {
+    margin: 2px 15px;
+    padding: 0 15px;
+    align-items: center;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  .toggle-row {
+    padding: 5px 15px;
+    margin-top: -25px;
+  }
+  .col {
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-thead {
+    margin: 15px 0;
+    padding-left: 0px;
+    margin-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    text-transform: uppercase;
+    .col-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: calc(var(--base-font-size) - 2px);
+      font-weight: var(--font-weight-medium);
+      color: var(--primary-color-3);
+    }
+    .col-sort {
+      cursor: pointer;
+    }
+  }
+  .card-tbody {
+    .row {
+      background-color: var(--white);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: var(--border-radius);
+
+      .col {
+        .flex-container {
+          display: flex;
+          flex-direction: column;
+          .label {
+            display: none;
+          }
+        }
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-table {
+    .row {
+      margin: 0px;
+    }
+    .card-thead {
+      display: none;
+    }
+
+    .card-tbody .row {
+      display: block;
+
+      .col {
+        .flex-container {
+          margin-bottom: 20px;
+
+          .label {
+            display: block;
+          }
+        }
+
+        // &.order-value-position {
+        // }
+      }
+    }
+  }
+}
+
+//Card Table End
+
+//Custom Accordian
+.custom-accordian {
+  .col-headtext {
+    color: var(--primary-color-3);
+    padding-bottom: 5px;
+  }
+  .col-labeltext {
+    color: var(--primary-color-2);
+    font-weight: 600;
+  }
+  .MuiAccordionSummary-root.Mui-expanded {
+    min-height: 72px;
+    border-bottom: solid 1px var(--border-color);
+  }
+  .MuiAccordionSummary-content.Mui-expanded {
+    margin: 20px 0;
+  }
+  .MuiAccordion-root.Mui-expanded {
+    border-radius: var(--border-radius);
+  }
+  h3 {
+    font-weight: var(--font-weight-bold);
+    line-height: 30px;
+  }
+  .MuiAccordionSummary-root {
+    padding: 0px 24px;
+  }
+  .MuiIconButton-root {
+    font-size: calc(var(--base-font-size) + 4px);
+  }
+  .MuiAccordionSummary-content {
+    margin: 20px 0;
+  }
+  .card-tbody {
+    padding-bottom: 24px;
+  }
+  .cust-label {
+    color: var(--primary-color-3);
+    padding-bottom: 10px;
+  }
+  .cust-label-bold {
+    color: var(--primary-color-3);
+    font-size: calc(var(--base-font-size) - 2px);
+    font-weight: var(--font-weight-medium);
+  }
+
+  .cust-value {
+    color: var(--primary-color-2);
+    font-weight: var(--font-weight-medium);
+    line-height: 20px;
+  }
+  .sub-heading {
+    padding-left: 24px;
+  }
+  .card-table .row {
+    margin: 2px 0px;
+  }
+
+  .MuiAccordionDetails-root {
+    display: flex;
+    padding: 0px 0px 0px;
+    background-color: var(--white);
+    border-radius: 4px;
+  }
+  .card-table-detail-basic {
+    .card-table .row {
+      margin: 0px 0px;
+      padding: 20px 0px;
+      align-items: center;
+    }
+
+    .card-table .card-tbody .row:first-child {
+      border-radius: 4px 4px 0px 0px;
+    }
+    .card-table .card-tbody .row:last-child {
+      border-radius: 0px 0px 4px 4px;
+      padding-bottom: 35px;
+    }
+    .card-table .card-tbody .row {
+      border-radius: 0px;
+    }
+  }
+
+  .card-table-lineitem {
+    background-color: var(--base-color);
+    margin: -15px;
+    padding: 15px;
+
+    .col-w-1 {
+      max-width: 50px;
+    }
+    .col-w-2 {
+      max-width: 175px;
+    }
+    .col-w-3 {
+      max-width: 125px;
+    }
+    .card-tbody {
+      padding-bottom: 0px;
+    }
+    .cust-label {
+      font-size: calc(var(--base-font-size) - 2px);
+      color: var(--primary-color-4);
+      padding-right: 10px;
+      padding-bottom: 0px;
+    }
+  }
+}
+
+//Classes for order address
+.order-address {
+  display: flex;
+  flex-direction: row;
+}
+
+//Classes for Order Fees
+.order-fees-cont {
+  .card-table {
+    .row {
+      margin: 2px 20px;
+    }
+    .gray-bg {
+      background-color: var(--gray-3);
+    }
+  }
+  .card-table .col {
+    padding: 0 0px;
+  }
+  .card-table .row {
+    margin: 2px 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .table-fit-content {
+    width: fit-content;
+  }
+  .custom-accordian {
+    .card-table-lineitem {
+      .col-w-1 {
+        max-width: 100%;
+      }
+      .col-w-2 {
+        max-width: 100%;
+      }
+      .col-w-3 {
+        max-width: 100%;
+      }
+    }
+  }
+  .card-table-lineitem .card-tbody .row {
+    display: block;
+    .row {
+      margin: 15px;
+    }
+
+    .card-tbody .row {
+      display: block;
+    }
+
+    .col {
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+
+        .label {
+          display: block;
+          padding-right: 10px;
+          padding-bottom: 0px;
+        }
+      }
+
+      // &.order-value-position {
+      // }
+    }
+  }
+  .order-address {
+    flex-direction: column;
+  }
+
+  //Classes for Order Fees
+  .order-fees-cont {
+    .card-table {
+      .card-thead {
+        display: block;
+      }
+    }
+  }
+}
+//Card Table More Action
+.card-table-more-action {
+  .btn-outline-neutral {
+    border: none;
+  }
+  .btn-outline-neutral {
+    width: 40px;
+    height: 40px;
+    padding: 9px 9px;
+  }
+  .btn-outline-neutral > svg {
+    stroke: var(--primary-icon-4);
+  }
+  .plus,
+  .minus {
+    border: var(--thin-border) var(--primary-color-4) !important;
+    background-color: var(--white);
+    margin-top: -10px;
+    width: 40px !important;
+    height: 40px !important;
+    .MuiSvgIcon-root {
+      color: var(--primary-color-4);
+    }
+  }
+  input {
+    background-color: transparent;
+    font-size: calc(var(--base-font-size) + 2px);
+    font-weight: var(--font-weight-medium);
+    border-bottom: var(--thin-border) var(--primary-color-4);
+  }
+}
+//classes for Recent Purchase Table
+.recent-purchase-table {
+  background-color: var(--base-color);
+  .card-table:last-child {
+    flex-direction: column;
+    margin-bottom: 0px;
+   
+  }
+
+  .col-w-2 {
+    max-width: 175px;
+  }
+
+  .col-w-3 {
+    max-width: 100px;
+  }
+  .col-w-4,
+  .col-w-5,
+  .col-w-7 {
+    max-width: 120px;
+  }
+  .col-w-6 {
+    max-width: 100px;
+  }
+  .col-w-8 {
+    max-width: 170px;
+  }
+
+  .card-tbody {
+    padding-bottom: 0px;
+  }
+  .cust-label {
+    font-size: calc(var(--base-font-size) - 2px);
+    color: var(--primary-color-4);
+    padding-right: 10px;
+    padding-bottom: 0px;
+  }
+}
+.recent-purchase-units {
+  .container {
+    .row {
+      background-color: inherit;
+      margin-bottom: 10px;
+      padding: 0px;
+      margin: 0px;
+      & select {
+        margin: 0px !important;
+        padding: 0px;
+        width: 75px;
+        height: 32px;
+      }
+    }
+  }
+  .mt-2 {
+    margin-top: 0px !important;
+    width: 100px;
+    & input {
+      width: 40px;
+      padding-left: 14px;
+    }
+    .plus,
+    .minus {
+      padding: 15px;
+      height: 20px;
+      margin: 0px;
+    }
+  }
+}
+
+.recent-buttons {
+  .btn-outline-primary {
+    width: 40px;
+    height: 32px;
+    padding-left: 9px;
+    padding-top: 4px;
+    margin-right: 10px;
+  }
+}

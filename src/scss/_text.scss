@@ -1,0 +1,175 @@
+//Base Font Family
+$base-font-family: 'OpenSans-Regular';
+
+@font-face {
+  font-family: $base-font-family;
+  font-weight: var(--font-weight-regular);
+  src: url(../assets/fonts/OpenSans-Regular.ttf);
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: var(--base-font-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--primary-color-2);
+  line-height: 20px;
+}
+
+//h1 to h6 tag
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+//Anchor tag Start
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  color: var(--primary-color-1);
+
+   &:hover,
+   &:active {
+     text-decoration: none;
+     color: var(--primary-color-1);
+     opacity: var(--high-opacity);
+
+}
+}
+//Anchor tag End
+
+//Custom Anchor Link Start
+.cust-anchor {
+  text-decoration: underline;
+  outline: none;
+  border: none;
+  color: var(--primary-color-2);
+  font-size: calc(var(--base-font-size) - 2px);
+   &:hover,
+   &:active {
+     text-decoration: underline;
+     opacity: var(--high-opacity);
+     cursor: pointer;
+
+}
+}
+//Custom Anchor Link End
+
+
+.page-heading {
+  font-size: var(--very-big-font-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color-2);
+}
+
+.section-heading {
+  font-size: var(--big-font-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color-2);
+}
+
+.table-heading {
+  font-size: calc(var(--base-font-size) - 2px);
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-color-2);
+}
+
+.table-text {
+  font-size: var(--base-font-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--primary-color-2);
+}
+
+.table-label {
+  font-size: var(--base-font-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--primary-color-2);
+  opacity: var(--medium-opacity);
+}
+
+.table-hyperlink {
+  font-size: var(--base-font-size);
+  font-weight: var(--medium-opacity);
+  color: var(--primary-color-1);
+  text-decoration: underline;
+}
+
+.table-description-text {
+  font-size: calc(var(--base-font-size) - 2px);
+  font-weight: var(--font-weight-regular);
+  color: var(--primary-color-2);
+  opacity: var(--high-opacity);
+}
+
+.drawer-container {
+  h5, p {
+    margin-bottom: 9px;
+  }
+  .label {
+    color: var(--primary-color-2);
+    opacity: var(--high-opacity);
+    margin-bottom: 9px;
+  }
+  .price {
+    font-weight: var(--font-weight-bold);
+  }
+  .price-old {
+    color: var(--primary-color-2);
+    margin-left: 3px;
+    font-size: 85%;
+    opacity: var(--high-opacity);
+  }
+}
+
+.hyperlink {
+  color: var(--primary-color-1);
+}
+
+
+.bold-font {
+  font-weight: var(--font-weight-bold);
+}
+
+.accordion-text {
+  position: absolute;
+  width: 87px;
+  height: 19px;
+  left: 30px;
+  font-family: primary-font;
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--base-font-size);
+  line-height: 19px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: var(--primary-color-4);
+}
+
+//Font Weight Classes
+.font-weight-regular{
+  font-weight: var(--font-weight-regular);
+}
+.font-weight-medium{
+  font-weight: var(--font-weight-medium);
+}
+.font-weight-bold{
+  font-weight: var(--font-weight-bold);
+}

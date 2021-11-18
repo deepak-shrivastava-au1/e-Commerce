@@ -1,0 +1,91 @@
+.header-sticky {
+  position: sticky;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 101;
+}
+.widget-header {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.widget-header a {
+  color: var(--white);
+}
+.widget-header .notify {
+  position: absolute;
+  top: 7px;
+  right: 1px;
+}
+.search-header {
+  justify-content: space-between;
+  margin: 0 45px !important;
+  height: 80px;
+}
+.search-area {
+  min-width: 50%;
+}
+.notify {
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: calc(var(--base-font-size) - 2px);
+  line-height: 1;
+  text-align: center;
+  border-radius: 3rem;
+  color: var(--yellow);
+}
+
+.brand-wrap .logo {
+  margin-right: 7px;
+  max-height: 42px;
+  display: inline-block;
+}
+
+.search-bar {
+  height: 48px !important;
+}
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+  margin: 24px 26px;
+}
+.user-message {
+  background-color: var(--info-alert-bg1);
+  height: 26px;
+  text-align: center;
+  padding: 0 40px;
+  padding-top: 3px;
+  .user-message-close {
+    float: right;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .search-area {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .form-control select {
+    border-radius: 0 !important;
+  }
+  .search-bar,
+  .btn-search {
+    border-radius: 0 !important;
+    height: 64px;
+  }
+  .search-bar {
+    height: 64px !important;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .user-message {
+    padding: 0px;
+  }
+}

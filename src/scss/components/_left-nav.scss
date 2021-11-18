@@ -1,0 +1,42 @@
+//Anchor tg for Left Nav Start
+.left-nav{
+    margin-right: 24px;
+    .navbar {
+       padding: 0px;
+    }
+    .nav-link {
+        padding: 0px;
+    }
+  
+    a {
+        text-decoration: none;
+        outline: none;
+        border: none;
+        color: var(--primary-color-2);
+        .icon {
+            stroke: var(--primary-icon-2);
+            fill: var(--primary-icon-2);
+        } 
+        &:hover,
+        &:active {
+           text-decoration: none;
+           color: var(--primary-color-1);
+           opacity: var(--high-opacity);
+           .icon {
+            stroke: var(--primary-icon-1);
+            fill: var(--primary-icon-1);
+           }
+        }
+        &.active {
+            text-decoration: none;
+            color: var(--primary-color-1);
+            text-decoration: none;
+            .icon {
+                stroke: var(--primary-icon-1);
+                fill: var(--primary-icon-1);
+           }  
+        } 
+    
+    }
+  }
+  //Anchor tg for Left Nav End

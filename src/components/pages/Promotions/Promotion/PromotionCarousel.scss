@@ -1,0 +1,126 @@
+.BootstrapMulti {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  background: var(--white);
+  border-radius: 2px;
+  margin-left: 3%;
+  margin-right: 3%;
+  .slick-arrow.slick-prev,
+  .slick-arrow.slick-next {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* use from mixin */
+    z-index: 1;
+    border-radius: var(--border-radius);
+    color: var(--gray-5);
+    /* variable */
+  }
+  .slick-arrow.slick-prev {
+    left: 5px;
+  }
+  .slick-arrow.slick-next {
+    right: 5px;
+  }
+  .slick-dots {
+    li {
+      button {
+        &before {
+          font-size: calc(var(--base-font-size) + 2px);
+        }
+      }
+    }
+  }
+}
+
+.carousel-header {
+  font-size: calc(var(--base-font-size) + 10px);
+  font-weight: var(--font-weight-bold);
+  text-align: left;
+  margin-bottom: 1rem;
+  padding-left: 25px;
+}
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+
+// button {
+//   outline: none;
+//   border: none;
+//   background: var(--white);
+//   border-radius: 20px;
+//   font-size: calc(var(--base-font-size) - 2px);
+//   font-weight: var(--font-weight-medium);
+//   padding: 7px 14px;
+//   margin: 10px 0;
+//   text-transform: inherit;
+// }
+
+/* use nested */
+// button:hover {
+//   cursor: pointer;
+// }
+
+.slick-disabled {
+  display: none !important;
+}
+.slick-slider {
+  background: var(--white);
+  border-radius: var(--thin-border);
+}
+.promo-slider {
+  .slick-slider {
+    .slick-list {
+      width: 96%;
+      padding-left: 25px;
+    }
+  }
+}
+.view-all {
+  background-color: var(--gray-3);
+  float: left;
+  font-size: var(--base-font-size);
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-color-2);
+  border-radius: var(--thin-border);
+  text-transform: inherit;
+}
+.view-content {
+  font-size: calc(var(--base-font-size) + 4px);
+  margin-bottom: 0px;
+  font-weight: var(--font-weight-bold);
+  width: 80%;
+  /* use margin and 100% */
+  text-align: left;
+}
+
+.carousel-desc {
+  font-size: calc(var(--base-font-size) - 2px);
+  margin-bottom: 0px;
+  font-weight: var(--font-weight-bold);
+  margin: 0px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: left;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.carousel-item {
+  text-align: center;
+  margin: 10;
+  padding: 0 10px;
+  width: 180px;
+  border-radius: var(--border-radius);
+}

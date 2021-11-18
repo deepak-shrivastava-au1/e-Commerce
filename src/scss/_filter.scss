@@ -1,0 +1,83 @@
+
+.tools {
+  margin-top: 20px;
+}
+
+.filterCheckBox {
+  height: 14px;
+  width: 14px;
+  cursor: pointer;
+  // display: flex;
+  // justify-content: flex-start;
+}
+.expandMore {
+  cursor: pointer;
+}
+.zero-padding {
+  padding: 0px;
+}
+.zero-left-padding {
+  padding-left: 0px;
+}
+.sectionDevider {
+  width: 100%;
+  margin: 0px;
+}
+.filter-val {
+  margin: 10px 6px;
+}
+.filter-val-checkbox {
+  margin-left: 6px;
+  margin-bottom: 19px;
+}
+
+.filter {
+  @include align-center;
+}
+
+.protectiveEquipments {
+  float: left;
+  margin-left: 25px;
+  margin-top: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: var(--base-font-size);
+  line-height: 19px;
+}
+.products {
+  margin-left: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--base-font-size);
+  line-height: 19px;
+}
+
+// Filter Chips
+.filterChips {
+  display: inline;
+}
+.chipsStyle {
+  padding: 5px 20px 5px 20px;
+  border: var(--thin-border) gray;
+  background-color: var(--white);
+  margin-left: 10px;
+  border-radius: 50px;
+  font-size: calc(var(--base-font-size) - 2px);
+  color: gray;
+}
+.chipsAlignment {
+  float: left;
+  padding-bottom: 10px;
+}
+.filterdata {
+  margin-left: 10px;
+  cursor: pointer;
+}
+.filterHead {
+  font-weight: var(--font-weight-bold);
+}
+.iconSidebar {
+  cursor: pointer;
+}

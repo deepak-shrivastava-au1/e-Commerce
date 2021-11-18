@@ -1,0 +1,66 @@
+//Card Table Start
+.card-table {
+	.row {
+		margin: 2px 15PX;
+		padding: 0 15px;
+		align-items: center;
+	}
+	.col {
+		padding: 0 10px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.card-thead {
+		margin: 15px 0;
+		text-transform: uppercase;
+	}
+
+	.card-tbody {
+		.row {
+			background-color: var(--white);
+			padding-top: 20px;
+			padding-bottom: 20px;
+			border-radius: var(--border-radius);
+
+			.col {
+				.flex-container {
+					display: flex;
+					flex-direction: column;
+					.label {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.card-table {
+        .row {
+            margin: 15px;
+        }
+		.card-thead {
+			display: none;
+		}
+
+		.card-tbody .row {
+			display: block;
+			margin-bottom: 16px;
+            &:last-child {
+				margin-bottom: 0px;	
+			}
+			.col {
+				.flex-container {
+					margin-bottom: 20px;
+
+					.label {
+						display: block;
+					}
+				}
+
+			}
+		}
+	}
+}
+//Card Table End
